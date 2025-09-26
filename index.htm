@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern E-commerce Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-4">
+          <a href="#" class="text-2xl font-bold tracking-tight">BUYHAVEN</a>
+          <nav class="hidden md:flex gap-4 ml-6">
+            <a href="#" class="text-sm hover:underline">Shop</a>
+            <a href="#categories" class="text-sm hover:underline">Categories</a>
+            <a href="#deals" class="text-sm hover:underline">Deals</a>
+            <a href="#story" class="text-sm hover:underline">Our Story</a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="hidden sm:flex items-center bg-gray-100 rounded-full px-3 py-1 gap-2">
+            <i data-feather="search"></i>
+            <input type="text" placeholder="Search products" class="bg-transparent outline-none text-sm w-40">
+          </div>
+
+          <button class="p-2 rounded-md hover:bg-gray-100"><i data-feather="heart"></i></button>
+          <button class="p-2 rounded-md hover:bg-gray-100"><i data-feather="user"></i></button>
+          <button class="p-2 rounded-md hover:bg-gray-100 relative">
+            <i data-feather="shopping-cart"></i>
+            <span class="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full px-1">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-16">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Discover Modern Essentials</h1>
+          <p class="mt-4 text-lg text-gray-600">Curated products for a simpler, smarter life. Hand-picked quality with fast delivery and trusted support.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="#shop" class="px-5 py-3 bg-black text-white rounded-lg font-medium shadow">Shop Now</a>
+            <a href="#story" class="px-5 py-3 border border-gray-200 rounded-lg font-medium">Our Story</a>
+          </div>
+
+          <div class="mt-8 flex gap-6">
+            <div class="flex items-center gap-3">
+              <i data-feather="truck"></i>
+              <div>
+                <div class="text-sm font-medium">Free delivery</div>
+                <div class="text-xs text-gray-500">On orders over $50</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-feather="life-buoy"></i>
+              <div>
+                <div class="text-sm font-medium">24/7 Support</div>
+                <div class="text-xs text-gray-500">Chat & Email</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-feather="refresh-cw"></i>
+              <div>
+                <div class="text-sm font-medium">30-day Returns</div>
+                <div class="text-xs text-gray-500">Hassle-free</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-first lg:order-last">
+          <div class="rounded-3xl overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=80" class="w-full h-72 object-cover sm:h-96 lg:h-[420px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h2 class="text-2xl font-semibold">Top Categories</h2>
+    <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjS8ywMSOb3KUk39Ta5Ro3xb9yM6P8TLbdw&s" class="w-full h-32 object-cover" />
+        <div class="p-3 text-sm font-medium">Fashion</div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=60" class="w-full h-32 object-cover" />
+        <div class="p-3 text-sm font-medium">Electronics</div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_QsGTUkjpDsQrpz_IsEnAw1MwE3ukUexOQ&s" class="w-full h-32 object-cover" />
+        <div class="p-3 text-sm font-medium">Home & Living</div>
+      </div>
+      <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=60" class="w-full h-32 object-cover" />
+        <div class="p-3 text-sm font-medium">Beauty</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEAL OF THE WEEK -->
+  <section id="deals" class="bg-gradient-to-r from-indigo-600 to-cyan-500 text-white py-12 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-2xl font-bold">Deal of the Week</h3>
+        <p class="mt-2 text-sm opacity-90">Limited-time price on our Wireless Headphones. Free returns & express shipping.</p>
+      </div>
+      <div class="flex gap-4">
+        <a href="#" class="bg-white text-indigo-700 px-4 py-2 rounded-lg font-medium">Shop Deal</a>
+        <a href="#" class="border border-white px-4 py-2 rounded-lg">See details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="text-2xl font-bold">BUY-HAVEN</div>
+        <p class="mt-3 text-sm text-gray-600">Quality goods that simplify your life. Subscribe for updates & exclusive deals.</p>
+        <form class="mt-4 flex gap-2">
+          <input type="email" placeholder="Your email" class="px-3 py-2 border rounded-md w-full text-sm" />
+          <button class="px-3 py-2 bg-black text-white rounded-md">Subscribe</button>
+        </form>
+      </div>
+      <div class="flex gap-8">
+        <div>
+          <div class="font-medium">Shop</div>
+          <ul class="mt-2 text-sm text-gray-600 space-y-2">
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Top Rated</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-medium">Support</div>
+          <ul class="mt-2 text-sm text-gray-600 space-y-2">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="font-medium">Follow us</div>
+        <div class="mt-3 flex gap-3">
+          <a href="#"><i data-feather="facebook"></i></a>
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t py-4 text-sm text-gray-500 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">
+      <div>© 2025 BUY-HAVEN. All rights reserved.</div>
+      <div>Privacy · Terms · Sitemap</div>
+    </div>
+  </footer>
+
+  <script>feather.replace()</script>
+</body>
+</html>
